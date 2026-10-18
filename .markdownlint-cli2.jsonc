@@ -1,0 +1,13 @@
+{
+  // Prettier runs with proseWrap "preserve" and so never re-wraps prose. MD013
+  // is therefore the only thing keeping the width honest. Code blocks and
+  // tables are exempt because neither reflows.
+  "config": {
+    "MD013": {
+      "line_length": 80,
+      "code_blocks": false,
+      "tables": false
+    }
+  },
+  "ignores": ["node_modules/"]
+}

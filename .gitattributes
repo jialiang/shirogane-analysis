@@ -1,0 +1,12 @@
+# Normalise every text file to LF, both in the repository and on checkout, so a
+# Windows working tree never reintroduces CRLF.
+* text=auto eol=lf
+
+# Types Git must not touch, in case a sample archive or a captured binary ever
+# lands here.
+*.pak binary
+*.idx binary
+*.png binary
+*.jpg binary
+*.exe binary
+*.dll binary
